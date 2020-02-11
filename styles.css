@@ -9,15 +9,13 @@
 
 body{
 background-image: url('imgs/background.svg');
-background-size:503px;
+background-size:contain;
 font-family: 'Old Standard TT', serif;
 }
-@media (max-width: 768px){
-  body{
-        background-size:contain;
-      }  
+/*@media (max-width: 768px){
+
 }
-/* .navbar-toggler-icon{
+ .navbar-toggler-icon{
     background-color:rgb(176,146,105) !important ;
     border: black;
     border-radius: 5px;
