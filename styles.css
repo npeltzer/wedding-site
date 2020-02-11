@@ -10,6 +10,7 @@
 body{
 background-image: url('imgs/background.svg');
 background-size:cover;
+background-color: black;
 font-family: 'Old Standard TT', serif;
 }
 /*@media (max-width: 768px){
