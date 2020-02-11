@@ -1,0 +1,36 @@
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('imgs/Engagment.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+body{
+background-image: url('imgs/background.svg');
+font-family: 'Old Standard TT', serif;
+}
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+       opacity: 0.7;
+  }
+  
+  div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }
+  .navbar, .page-footer{
+      background-color: black;
+    
+  }
+  .navbar .nav-link, .page-footer{
+  
+    color:goldenrod !important;
+}
+.navbar .navbar-brand{
+  
+    color:goldenrod !important;
+}
