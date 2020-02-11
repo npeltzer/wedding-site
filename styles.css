@@ -1,7 +1,7 @@
 .masthead {
     height: 100vh;
     min-height: 500px;
-    background-image: url('imgs/Engagment.jpg');
+    background: url('imgs/Engagment.jpg') no-repeat 0 0 fixed;;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
