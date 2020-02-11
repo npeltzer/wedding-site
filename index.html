@@ -17,6 +17,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <!-- <a class="navbar-brand" href="#">Nicholas & Isabella</a> -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,6 +50,10 @@
         <div class="col-12 text-center transbox">
         <h1>Nicholas & Isabella</h1>
         <p class="lead">October 30, 2020</p>
+        
+          
+          <div id="clock" class="countdown-circles d-flex flex-wrap justify-content-center pt-4"></div>
+      
       </div>
     </div>
   </div>
@@ -66,3 +71,16 @@
 <!-- Footer -->
 </body>
 </html>
+<script >
+
+$(function () {
+
+$('#clock').countdown('2020/10/30').on('update.countdown', function(event) {
+  var $this = $(this).html(event.strftime(''
+    + '<span class="h1 font-weight-bold">%D</span> Day%!d'
+    + '<span class="h1 font-weight-bold">%H</span> Hr'
+    + '<span class="h1 font-weight-bold">%M</span> Min'
+    + '<span class="h1 font-weight-bold">%S</span> Sec'));
+});
+})
+</script>
