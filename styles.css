@@ -9,6 +9,7 @@
 
 body{
 background-image: url('imgs/background.svg');
+background-size:contain ;
 font-family: 'Old Standard TT', serif;
 }
 div.transbox {
