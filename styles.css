@@ -14,7 +14,12 @@
     background-position: top;
     background-repeat: no-repeat;
   }
-
+.center-text{
+  text-align: center;
+}
+.list-group-item{
+  background-color: darkgray;
+}
 body{
 background-image: url('imgs/background.svg');
 
