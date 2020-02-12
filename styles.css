@@ -1,7 +1,15 @@
 .masthead {
     height: 100vh;
     min-height: 500px;
-    background: url('imgs/Engagment.jpg') no-repeat 0 0 fixed;;
+    background: url('imgs/Engagment.jpg') no-repeat 0 0 fixed;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .masthead2 {
+    height: 100vh;
+    min-height: 500px;
+    background: url('imgs/mcclintock.jpg') no-repeat 0 0;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -9,7 +17,7 @@
 
 body{
 background-image: url('imgs/background.svg');
-background-size:cover;
+
 background-color: black;
 font-family: 'Old Standard TT', serif;
 }
@@ -21,6 +29,10 @@ font-family: 'Old Standard TT', serif;
     border: black;
     border-radius: 5px;
 } */
+
+.content{
+  background-color: gainsboro;
+}
 div.transbox {
     padding-top: 30px;
     

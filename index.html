@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Peltzer Wedding - Home</title>
+    <title>Peltzer Wedding</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,11 +30,11 @@
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="details.html">Details</a>
+            <a class="nav-link" data-toggle="pill" href="#details">Details</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Wedding Party</a>
@@ -46,22 +46,60 @@
        
       </div>
     </nav>
-   <!-- Full Page Image Header with Vertically Centered Content -->
-  <div class="col-md-10 col-sm-12 offset-md-1 ofset-sm-0">
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-        <div class="col-12 text-center transbox">
-        <h1>Nicholas & Isabella</h1>
-        <p class="lead">October 30, 2020</p>
-        
+    <div class="tab-content">
+        <div class="tab-pane" id="home">
+      <!-- Full Page Image Header with Vertically Centered Content -->
+          <div class="col-md-10 col-sm-12 offset-md-1">
+            <header class="masthead">
+              <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                <div class="col-12 text-center transbox">
+                <h1>Nicholas & Isabella</h1>
+                <p class="lead">October 30, 2020</p>
+                
+                  
+                  <div id="clock" class="countdown-circles d-flex flex-wrap justify-content-center pt-4"></div>
+              
+              </div>
+            </div>
+          </div>
+        </header>
+        </div>
+    </div>
+    <div class="tab-pane active" id="details">
+      <div class="col-md-10 col-sm-12 offset-md-1 h-100 content">     
+      <header class="masthead2">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+          <div class="col-12 text-center transbox">
+          <h1>McCLINTOCK DISTILLING</h1>
+          <p class="lead">Frederick, Md.</p>
           
-          <div id="clock" class="countdown-circles d-flex flex-wrap justify-content-center pt-4"></div>
-      
+            
+            <div id="clock" class="countdown-circles d-flex flex-wrap justify-content-center pt-4"></div>
+        
+        </div>
       </div>
     </div>
-  </div>
-</header>
+  </header> 
+  
+    <div class="row" style="margin-top: 25px;">
+      <div class="col-md-6 col-sm-12">
+        <P>The wedding and reception will be held at:</P>
+        <p class="" style="text-align: center;">McClintock Distilling<br>
+          35 S Carroll St <br>
+          Frederick, MD 21701
+        
+        4:45pm</p>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3082.4892226145757!2d-77.41059188467511!3d39.413060379494425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c9da5be716e809%3A0x73c769424a4ef9b3!2sMcClintock%20Distilling!5e0!3m2!1sen!2sus!4v1581470804854!5m2!1sen!2sus" height="450" width="100%" frameborder="0" style="border: 7px;border-style: solid;" allowfullscreen=""></iframe>
+      </div>    
+    </div>
+      
+      </div>
+     
+    </div>
 </div>
 <!-- Footer -->
 <footer class="page-footer font-small">
@@ -78,6 +116,12 @@
 <script >
 
 $(function () {
+  $(".nav-link").on("click", function(){
+  var curId = $(this).attr("href");
+  $(".tab-pane").removeClass("active");
+  $(".nav-link").removeClass("active");
+  $(".tab-pane" + curId).addClass("active");
+});
 
 $('#clock').countdown('2020/10/30').on('update.countdown', function(event) {
   var $this = $(this).html(event.strftime(''
