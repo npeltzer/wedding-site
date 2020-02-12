@@ -24,6 +24,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
@@ -59,7 +60,7 @@
   <div class="tab-content">
     <div class="tab-pane active" id="home">
       <!-- Full Page Image Header with Vertically Centered Content -->
-      <div class="col-md-10 col-sm-12 offset-md-1">
+      <div class="col-md-10 col-sm-12 offset-md-1 content">
         <header class="masthead">
           <div class="container h-100">
             <div class="row h-100 align-items-center">
@@ -112,7 +113,7 @@
         <div class="row" style="margin-top: 25px;">
           <h2 class="col-sm-12 center-text">Cattering</h2>
           <div class="col-12 mx-auto text-center">
-            <img class="" src="imgs/Pigs_Red_Logo-170w.png">
+            <a href="https://www.porkisgoodstuff.com/"><img class="" src="imgs/Pigs_Red_Logo-170w.png"></a>
           </div>
           <h3 class="col-8 mx-auto text-left">Hors d’ oeuvres</h3>
           <div class="col-8 mx-auto text-center" style="margin-bottom: 25px;">
@@ -169,22 +170,3 @@
 </body>
 
 </html>
-<script>
-
-  $(function () {
-    $(".nav-link").on("click", function () {
-      var curId = $(this).attr("href");
-      $(".tab-pane").removeClass("active");
-      $(".nav-link").removeClass("active");
-      $(".tab-pane" + curId).addClass("active");
-    });
-
-    $('#clock').countdown('2020/10/30').on('update.countdown', function (event) {
-      var $this = $(this).html(event.strftime(''
-        + '<span class="h1 font-weight-bold">%D</span> Day%!d'
-        + '<span class="h1 font-weight-bold">%H</span> Hr'
-        + '<span class="h1 font-weight-bold">%M</span> Min'
-        + '<span class="h1 font-weight-bold">%S</span> Sec'));
-    });
-  })
-</script>
