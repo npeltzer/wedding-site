@@ -76,9 +76,19 @@ div.transbox {
 
 #image-gallery .modal-footer{
   display: block;
+  border:0;
 }
 
 .thumb{
   margin-top: 15px;
   margin-bottom: 15px;
+}
+.modal-footer{
+  border:0;
+}
+#image-gallery .modal-header{
+  border:0;
+}
+#image-gallery img {
+  image-orientation: from-image;
 }
