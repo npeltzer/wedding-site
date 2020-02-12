@@ -26,10 +26,17 @@ background-image: url('imgs/background.svg');
 background-color: black;
 font-family: 'Old Standard TT', serif;
 }
-/*@media (max-width: 768px){
-
+@media (max-width: 768px){
+  .masthead {
+    height: 100vh;
+    min-height: 500px;
+    background: url('imgs/Engagment-mobile.jpg') no-repeat 0 0 fixed;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
 }
- .navbar-toggler-icon{
+/* .navbar-toggler-icon{
     background-color:rgb(176,146,105) !important ;
     border: black;
     border-radius: 5px;
