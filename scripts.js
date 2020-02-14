@@ -1,9 +1,22 @@
 $(function () {
+    var url = location.href.replace(/\/$/, "");
+ 
+  if (location.hash) {
+    var hash = url.split("#");
+    $('.navbar-nav a[href="#'+hash[1]+'"]').tab("show");
+    url = location.href.replace(/\/#/, "#");
+    history.replaceState(null, null, url);
+    setTimeout(() => {
+      $(window).scrollTop(0);
+    }, 400);
+  } 
+
     $(".nav-link").on("click", function () {
         var curId = $(this).attr("href");
         $(".tab-pane").removeClass("active");
         $(".nav-link").removeClass("active");
         $(".tab-pane" + curId).addClass("active");
+        history.replaceState(null, null, curId);
     });
     $('.navbar-nav>li>a').on('click', function () {
         $('.navbar-collapse').collapse('hide');
