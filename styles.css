@@ -1,7 +1,7 @@
 .masthead {
     height: 100vh;
     min-height: 500px;
-    background: url('imgs/Engagment.jpg') no-repeat 0 0 fixed;
+    background: url('imgs/Engagment.jpg') no-repeat 0 0 ;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -30,11 +30,21 @@ font-family: 'Old Standard TT', serif;
   .masthead {
     height: 100vh;
     min-height: 500px;
-    background: url('imgs/Engagment-mobile.jpg') no-repeat 0 0 fixed;
+    background: url('imgs/Engagment-mobile.jpg') no-repeat 0 0 ;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
   }
+  .brides-side{
+  margin-top: 50px;
+  }
+}
+@media (min-width: 768px){
+ 
+  .grooms-side{
+    border-right: 1px solid;
+  }
+  
 }
 /* .navbar-toggler-icon{
     background-color:rgb(176,146,105) !important ;
@@ -91,4 +101,13 @@ div.transbox {
 }
 #image-gallery img {
   image-orientation: from-image;
+}
+.wedding-party img{
+  border-radius: 50%;
+  height:150px;
+  width:150px;
+}
+
+.wedding-party li{
+  background-color: gainsboro;
 }
