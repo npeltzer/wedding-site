@@ -75,6 +75,11 @@ div.transbox {
   
     color:rgb(176,146,105) !important;
 }
+.page-footer a{
+  
+  color:rgb(176,146,105) !important;
+  text-decoration: underline;
+}
 .navbar .navbar-brand{
   
     color:rgb(176,146,105) !important;
