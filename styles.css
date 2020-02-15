@@ -21,9 +21,9 @@
   background-color: darkgray;
 }
 body{
-background-image: url('imgs/background.svg');
+/* background-image: url('imgs/background.svg'); */
 
-background-color: black;
+background-color: gainsboro;
 font-family: 'Old Standard TT', serif;
 }
 @media (max-width: 768px){
