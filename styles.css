@@ -77,16 +77,16 @@ div.transbox {
   }
   .navbar .nav-link, .page-footer{
   
-    color:rgb(176,146,105) !important;
+    color:#cc984e !important;
 }
 .page-footer a{
   
-  color:rgb(176,146,105) !important;
+  color:#cc984e  !important;
   text-decoration: underline;
 }
 .navbar .navbar-brand{
   
-    color:rgb(176,146,105) !important;
+    color:#cc984e  !important;
 }
 .btn:focus, .btn:active, button:focus, button:active {
   outline: none !important;
