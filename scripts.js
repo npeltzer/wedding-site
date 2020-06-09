@@ -12,11 +12,14 @@ $(function () {
   } 
 
     $(".nav-link").on("click", function () {
+
         var curId = $(this).attr("href");
-        $(".tab-pane").removeClass("active");
-        $(".nav-link").removeClass("active");
-        $(".tab-pane" + curId).addClass("active");
-        history.replaceState(null, null, curId);
+        if(curId.indexOf("#") !=-1){
+            $(".tab-pane").removeClass("active");
+            $(".nav-link").removeClass("active");
+            $(".tab-pane" + curId).addClass("active");
+            history.replaceState(null, null, curId);
+        }
     });
     $('.navbar-nav>li>a').on('click', function () {
         $('.navbar-collapse').collapse('hide');
