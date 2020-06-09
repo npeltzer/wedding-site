@@ -27,6 +27,12 @@ background-color: gainsboro;
 font-family: 'Old Standard TT', serif;
 }
 @media (max-width: 768px){
+  .registry-desktop{
+    display: none;
+  }
+  .registry-mobile{
+   display: block;
+ }
   .masthead {
     height: 100vh;
     min-height: 500px;
@@ -44,7 +50,12 @@ font-family: 'Old Standard TT', serif;
   }
 }
 @media (min-width: 768px){
- 
+ .registry-desktop{
+   display: block;
+ }
+ .registry-mobile{
+  display: none;
+}
   .grooms-side{
     border-right: 1px solid;
   }
