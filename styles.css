@@ -6,6 +6,18 @@
     background-position: top;
     background-repeat: no-repeat;
   }
+  .rsvp-button{
+    position: relative;
+    top: -38%;
+    z-index: 100;
+    background-color: black;
+    color: #cc984e;
+  }
+  .rsvp-button:hover{
+    background-color: black;
+    opacity: .75 ;
+    color: #cc984e;
+  }
   .masthead2 {
     height: 100vh;
     min-height: 500px;
@@ -27,6 +39,11 @@ background-color: gainsboro;
 font-family: 'Old Standard TT', serif;
 }
 @media (max-width: 768px){
+  .rsvp-button{
+   
+    top: -44%;
+    
+  }
   .registry-desktop{
     display: none;
   }
@@ -50,6 +67,7 @@ font-family: 'Old Standard TT', serif;
   }
 }
 @media (min-width: 768px){
+
  .registry-desktop{
    display: block;
  }
