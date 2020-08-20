@@ -30,7 +30,8 @@
   text-align: center;
 }
 .list-group-item{
-  background-color: darkgray;
+ background-color: #a31919;
+    color: white;
 }
 body{
 /* background-image: url('imgs/background.svg'); */
